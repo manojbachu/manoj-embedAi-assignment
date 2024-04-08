@@ -1,0 +1,6 @@
+.home-bg {
+  background-color: #f4f4f5;
+  height: 100vh;
+  border: 1px solid black;
+  display: flex;
+}
