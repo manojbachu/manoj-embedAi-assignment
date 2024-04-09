@@ -7,6 +7,28 @@
   flex-direction: column;
 }
 
+@media screen and (max-width: 676px) {
+  .left-bar-bg {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 678px) and (max-width: 1024px) {
+  .left-bar-bg {
+    width: 40%;
+    height: 100vh;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+    z-index: 2;
+  }
+}
+
 .logo-name {
   color: #000000;
   font-size: 16px;
@@ -15,7 +37,7 @@
   cursor: pointer;
 }
 
-.right-arrow-btn {
+.left-arrow-btn {
   color: #a2a2ac;
   width: 30px;
   height: 30px;
@@ -24,15 +46,17 @@
   justify-content: center;
   align-items: center;
   border: none;
+  outline: none;
   background-color: transparent;
   cursor: pointer;
 }
 
-.right-arrow-btn:hover {
+.left-arrow-btn:hover {
   background-color: #ececee;
 }
 
 .create-character-btn {
+  align-self: flex-start;
   color: #585962;
   font-size: 14px;
   font-weight: 100;
@@ -108,7 +132,7 @@
 .hr-line {
   border: 1px solid #e4e4e7;
   border-radius: 50px;
-  margin: 10px 0px;
+  margin: 16px 0px;
 }
 
 .try-btn {
@@ -166,4 +190,65 @@
   font-size: 13px;
   font-weight: 300;
   margin: 0px 0px 0px 10px;
+}
+
+.profile-menu {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  background-color: #ececee;
+}
+
+.menu-list-item {
+  border-radius: 5px;
+  margin: 0px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-list-item:hover {
+  background-color: #d9d9df;
+}
+
+.profile-menu-btn {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+/* floating container styles */
+
+.floating-div {
+  width: 10%;
+  margin: 16px 5px;
+  background-color: transparent;
+  position: absolute;
+  align-self: flex-start;
+  z-index: 2;
+}
+
+.menu-float-btn {
+  color: #000000;
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-float-btn:hover {
+  background-color: #e4e4e7;
 }
