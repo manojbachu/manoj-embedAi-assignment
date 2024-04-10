@@ -72,3 +72,35 @@
   background-color: transparent;
   border: none;
 }
+
+.content-title {
+  color: #000011;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  margin-left: 5px;
+  opacity: 0.8;
+}
+
+/* button slider style goes here */
+.btn-slider-bg {
+  margin-right: 10px;
+}
+
+.item-select-btn {
+  color: #4d4d52;
+  font-size: 14px;
+  font-weight: 450;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e4e4e7;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #000011;
+  color: #ffffff;
+  padding: 9px 15px;
+}
